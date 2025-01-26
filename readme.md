@@ -1,6 +1,6 @@
 # Projeto Elevador
 
-Este projeto simula um elevador funcional em um prédio, o foco é integração do HTML, CSS e JavaScript, com lógica que permite o usuário o controle e a movimentação do elevador entre diferentes andares de forma interativa.
+Este projeto simula um elevador funcional em um prédio, o foco é a integração do HTML, CSS e JavaScript, com lógica que permite o usuário o controle e a movimentação do elevador entre diferentes andares de forma interativa.
 
 ## Estrutura do Projeto
 
