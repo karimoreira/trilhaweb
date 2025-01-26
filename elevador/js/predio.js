@@ -1,5 +1,7 @@
 (function () {
 
+    // -------------------- Pavimentos
+
     function criarTerreo() {
         const janela = document.createElement('div')
         janela.classList.add('janela')
@@ -39,6 +41,8 @@
     }
 
     criarPavimentos()
+
+    // -------------------- Elevador
 
     function iniciarComando(comando) {
         const botao = document.querySelector(`[comando="${comando}"]`)
