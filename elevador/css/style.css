@@ -8,27 +8,58 @@ body {
     display: flex;
     flex-direction: column;
     background-color: black;
+    height: 100vh;
 }
 
 
+/*css sidewalk */
+.sidewalk {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex: 1;
+}
 
 /*css controls */
-
-
+.controls {
+    height: 100px;
+    background-color: #222;
+}
 
 /*css road */
-
 .road {
     display: flex;
     align-items: center;
     height: 100px;
     background-color: #777;
     gap: 30px;
-
+    border-top: 10px solid white;
 }
 
 .road > .faixa {
     flex: 1;
     height: 10px;
     background-color: #DDD;
+}
+
+/*css tree */
+.tree {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tree::before {
+    content: "";
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: green;
+}
+
+.tree::after {
+    content: "";
+    width: 20px;
+    height: 100px;
+    background-color: #4d3131;
 }
