@@ -1,5 +1,3 @@
-/*css gerais */
-
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
 * {
@@ -12,19 +10,17 @@ body {
     flex-direction: column;
     background-color: black;
     height: 100vh;
-    font-family: 'VT323', 'monospace';
+    font-family: 'VT323', monospace;
 }
 
-/*css sidewalk */
-.sidewalk {
+.calcada {
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
-    flex: 1;
+    flex: 1
 }
 
-/*css controls */
-.controls {
+.controles {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,7 +31,7 @@ body {
     margin-bottom: 10px;
 }
 
-.controls .mostrador {
+.controles .mostrador {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,10 +41,9 @@ body {
     width: 200px;
     border-radius: 8px;
     font-size: 2.5rem;
-
 }
 
-.controls button {
+.controles button {
     height: 70px;
     width: 70px;
     border-radius: 50%;
@@ -56,12 +51,11 @@ body {
     border: 6px solid #999;
 }
 
-.controls button.destaque {
+.controles button.destaque {
     border-color: yellow;
 }
 
-/*css road */
-.road {
+.rua {
     display: flex;
     align-items: center;
     height: 100px;
@@ -70,20 +64,19 @@ body {
     border-top: 10px solid white;
 }
 
-.road > .faixa {
+.rua>.faixa {
     flex: 1;
     height: 10px;
     background-color: #DDD;
 }
 
-/*css tree */
-.tree {
+.arvore {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.tree::before {
+.arvore::before {
     content: "";
     width: 150px;
     height: 150px;
@@ -91,14 +84,12 @@ body {
     background-color: green;
 }
 
-.tree::after {
+.arvore::after {
     content: "";
     width: 20px;
     height: 100px;
     background-color: #4d3131;
 }
-
-/*css prédio */
 
 .predio {
     display: flex;
@@ -113,12 +104,6 @@ body {
     flex-direction: column;
     background-color: #0006;
     flex: 2;
-}
-
-.poco {
-    display: flex;
-    background-color: #fff9;
-    flex: 1;
 }
 
 .andar {
@@ -136,15 +121,68 @@ body {
     width: 40%;
     height: 80%;
     background-color: brown;
-    border: solid 5px #fff6;
+    border: solid 5px #FFF6;
     border-bottom-width: 0;
 }
 
 .porta::after {
-    content:"";
+    content: "";
     width: 30%;
     height: 15%;
     border-radius: 5px;
     background-color: #FFF9;
+}
 
+.terreo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    border-bottom: 2px solid transparent;
+}
+
+.janela {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 5px #FFFC;
+    background-color: #068888;
+    height: 50%;
+    width: 40%;
+}
+
+.janela::after {
+    content: "";
+    position: absolute;
+    border: 1px solid #FFFC;
+    top: 0;
+    height: 100%;
+    width: 1px;
+}
+
+.janela::before {
+    content: "";
+    position: absolute;
+    border: 1px solid #FFFC;
+    left: 0;
+    width: 100%;
+    height: 1px;
+}
+
+.poco {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: #fff9;
+    flex: 1;
+}
+
+.elevador {
+    position: absolute;
+    border: 3px solid black;
+    border-top-width: 10px;
+    background-color: #FFFA;
+    width: 80%;
+    bottom: 0;
 }

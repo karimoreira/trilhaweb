@@ -6,67 +6,28 @@
     <title>Elevador</title>
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/road.js" defer></script>
+    <script src="./js/predio.js" defer></script>
 </head>
 <body>
-    <div class="controls">
+    <div class="controles">
         <div class="mostrador">Térreo</div>
-        <button>T</button>
-        <button>1</button>
-        <button>2</button>
-        <button class="destaque">3</button>
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
+        <button comando="t">T</button>
+        <button comando="1">1</button>
+        <button comando="2">2</button>
+        <button comando="3">3</button>
+        <button comando="4">4</button>
+        <button comando="5">5</button>
+        <button comando="6">6</button>
     </div>
-    <div class="sidewalk">
-        <div class="tree"></div>
+    <div class="calcada">
+        <div class="arvore"></div>
         <div class="predio">
-            <div class="coluna">
-                <div class="andar">
-                    <div class="porta"></div>
-                </div>
-                <div class="andar">
-                    <div class="porta"></div>
-                </div>
-                <div class="andar">
-                    <div class="porta"></div>
-                </div>
-                <div class="andar">
-                    <div class="porta"></div>
-                </div>
-                <div class="andar">
-                    <div class="porta"></div>
-                </div>
-                <div class="andar">
-                    <div class="porta"></div>
-                </div>
-            </div>
+            <div class="coluna" andares="6"></div>
             <div class="poco"></div>
-            <div class="coluna">
-                <div class="andar">
-                    <div class="porta"></div>
-                </div>
-                <div class="andar">
-                    <div class="porta"></div>
-                </div>
-                <div class="andar">
-                    <div class="porta"></div>
-                </div>
-                <div class="andar">
-                    <div class="porta"></div>
-                </div>
-                <div class="andar">
-                    <div class="porta"></div>
-                </div>
-                <div class="andar">
-                    <div class="porta"></div>
-                </div>
-            </div>
+            <div class="coluna" andares="6"></div>
         </div>
-        <div class="tree"></div>
+        <div class="arvore"></div>
     </div>
-    <div class="road" faixas="15">
-      
-    </div>
+    <div class="rua" faixas="15"></div>
 </body>
 </html>
