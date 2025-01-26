@@ -1,0 +1,34 @@
+/*css gerais */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+
+
+/*css controls */
+
+
+
+/*css road */
+
+.road {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    background-color: #777;
+    gap: 30px;
+
+}
+
+.road > .faixa {
+    flex: 1;
+    height: 10px;
+    background-color: #DDD;
+}
